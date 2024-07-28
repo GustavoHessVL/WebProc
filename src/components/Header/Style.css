@@ -1,46 +1,56 @@
+/* Apply to global styles, e.g., in global.css or index.css */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    #2c3e50,
+    #34495e
+  ); /* Gradient background */
+  color: #ecf0f1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
+  width: 100%; /* Ensure full width */
+  background-color: #1c1c1c; /* Dark background */
+  padding: 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .header-content {
-  width: 100%;
+  width: 100%; /* Ensure content stretches full width */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-title {
+.logo {
   font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db; /* Blue color for text */
 }
 
-.header-nav {
-  margin: 0;
+.logo-text {
+  color: #ecf0f1; /* Light grey color */
 }
 
-.nav-list {
-  list-style: none;
+.main-content {
+  flex: 1;
   display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  display: inline;
-}
-
-.nav-link {
-  color: #61dafb;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: #21a1f1;
+  align-items: center;
+  justify-content: center;
 }
