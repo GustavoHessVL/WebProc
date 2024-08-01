@@ -1,6 +1,6 @@
 import React from "react";
 
-const Example1: React.FC = () => {
+const Instructions: React.FC = () => {
   return (
     <div>
       <h1>WebProc Project</h1>
@@ -9,4 +9,4 @@ const Example1: React.FC = () => {
   );
 };
 
-export default Example1;
+export default Instructions;

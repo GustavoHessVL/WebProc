@@ -32,12 +32,13 @@ body,
 
 .buttons {
   margin-top: 20px;
+  min-width: 50px;
 }
 
 .nav-button {
   background-color: #3498db;
   color: #ecf0f1;
-  width: 100px;
+  min-width: 100px;
   height: 100px;
   border: none;
   padding: 10px 20px;

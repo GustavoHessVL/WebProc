@@ -14,10 +14,10 @@ const Home: React.FC = () => {
       <p>Interactive Learning System</p>
       <div className="buttons">
         <button
-          onClick={() => openInNewTab("/example1")}
+          onClick={() => openInNewTab("/instructions")}
           className="nav-button"
         >
-          1
+          Instructions
         </button>
         <button
           onClick={() => openInNewTab("/example2")}
