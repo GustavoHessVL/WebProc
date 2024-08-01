@@ -16,6 +16,9 @@ const Home: React.FC = () => {
         <button onClick={() => navigate("/example2")} className="nav-button">
           2
         </button>
+        <button onClick={() => navigate("/example3")} className="nav-button">
+          3
+        </button>
       </div>
     </div>
   );
