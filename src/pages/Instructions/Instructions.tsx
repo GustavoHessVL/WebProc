@@ -1,7 +1,23 @@
 import React from "react";
+import {useState} from "react";
 import "./Style.css";
 
+const Theory1 = "Lorem ipsum dolor sit amet. Eum autem aliquam et eligendi numquam eos  magnam dolorum sit placeat porro ut doloremque explicabo non molestiae  facilis. Sit nulla placeat et rerum necessitatibus aut dolorem  voluptatibus et perferendis pariatur. Aut animi vitae et quibusdam  galisum ab iusto labore. Et sunt galisum qui laboriosam porro nam  officia aliquam ab impedit soluta.";
+
+
+/* Do a button that switches between 0 and 1*/
+
+
+
 const Instructions: React.FC = () => {
+const [button, setButton] = useState(0);
+const changeButton = () => {
+  if (button === 0) {
+    setButton(1);
+   } else {
+     setButton(0);
+   }
+ };
   return (
     <div className="container">
       <h1>WebProc Project</h1>
@@ -15,9 +31,13 @@ const Instructions: React.FC = () => {
       </div>
       <div className="ContentDiv">
         {/* Content for the second block */}
+        
+        <div className="block">{
+        <button onClick={changeButton}>{button.valueOf()}</button>
 
-        <div className="block">{/* Content for the second block */}</div>
-        <div className="Theory">{/* Content for the second block */}</div>
+        }
+        </div>
+        <div className="Theory">{Theory1}</div>
       </div>
       <div className="section">
         {" "}
