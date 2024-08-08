@@ -1,0 +1,56 @@
+.memory-system {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+.input-group label {
+  margin-right: 10px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: rgb(31, 12, 91);
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.output {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.memory-display {
+  margin-top: 20px;
+}
+
+.memory-slots {
+  display: flex;
+  justify-content: center;
+}
+
+.memory-slot {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  width: 30px;
+  font-size: 18px;
+}

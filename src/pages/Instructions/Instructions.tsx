@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Style.css";
 import ToggleButton from "../../components/ToggleButton/ToggleButton";
+import MemorySystem from "../../components/MemorySystem/MemorySystem";
 
 const Theory1 =
   "Lorem ipsum dolor sit amet. Eum autem aliquam et eligendi numquam eos  magnam dolorum sit placeat porro ut doloremque explicabo non molestiae  facilis. Sit nulla placeat et rerum necessitatibus aut dolorem  voluptatibus et perferendis pariatur. Aut animi vitae et quibusdam  galisum ab iusto labore. Et sunt galisum qui laboriosam porro nam  officia aliquam ab impedit soluta.";
@@ -57,7 +58,11 @@ const Instructions: React.FC = () => {
           {/* Content for the second block */}
 
           <div className="Theory">{/* Content for the second block */}</div>
-          <div className="block">{/* Content for the second block */}</div>
+          <div className="block">
+            <div>
+              <MemorySystem />
+            </div>
+          </div>
         </div>
       </div>
       <div className="section">
