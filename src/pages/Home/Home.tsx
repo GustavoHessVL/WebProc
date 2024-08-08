@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import "./Style.css";
 
 const Home: React.FC = () => {
@@ -14,21 +14,15 @@ const Home: React.FC = () => {
       <p>Interactive Learning System</p>
       <div className="buttons">
         <button
-          onClick={() => openInNewTab("/instructions")}
+          onClick={() => navigate("/instructions")}
           className="nav-button"
         >
           Instructions
         </button>
-        <button
-          onClick={() => openInNewTab("/example2")}
-          className="nav-button"
-        >
+        <button onClick={() => navigate("/example2")} className="nav-button">
           2
         </button>
-        <button
-          onClick={() => openInNewTab("/example3")}
-          className="nav-button"
-        >
+        <button onClick={() => navigate("/example3")} className="nav-button">
           3
         </button>
       </div>
