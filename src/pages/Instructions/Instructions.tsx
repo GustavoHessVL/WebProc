@@ -10,14 +10,6 @@ const Theory1 =
 /* Do a button that switches between 0 and 1*/
 
 const Instructions: React.FC = () => {
-  const [button, setButton] = useState(0);
-  const changeButton = () => {
-    if (button === 0) {
-      setButton(1);
-    } else {
-      setButton(0);
-    }
-  };
   return (
     <div className="container">
       <h1>WebProc Project</h1>
@@ -52,12 +44,12 @@ const Instructions: React.FC = () => {
         {" "}
         //Sessão 2
         <div className="TitleDiv">
-          <h2 className="section-title">Title 2</h2>
+          <h2 className="section-title">Load / Store</h2>
         </div>
         <div className="ContentDiv">
           {/* Content for the second block */}
 
-          <div className="Theory">{/* Content for the second block */}</div>
+          <div className="Theory">{"As intruções Load / Store"}</div>
           <div className="block">
             <div>
               <MemorySystem />
@@ -71,12 +63,12 @@ const Instructions: React.FC = () => {
         <div className="TitleDiv">
           <h2 className="section-title">Title 3</h2>
         </div>
-      </div>
-      <div className="ContentDiv">
-        {/* Content for the second block */}
+        <div className="ContentDiv">
+          {/* Content for the second block */}
 
-        <div className="block">{/* Content for the second block */}</div>
-        <div className="Theory">{/* Content for the second block */}</div>
+          <div className="block">{/* Content for the second block */}</div>
+          <div className="Theory">{/* Content for the second block */}</div>
+        </div>
       </div>
     </div>
   );

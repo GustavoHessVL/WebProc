@@ -24,7 +24,7 @@ button {
   margin-top: 10px;
   cursor: pointer;
   background-color: #4caf50;
-  color: rgb(31, 12, 91);
+  color: white;
   border: none;
   border-radius: 5px;
 }
@@ -51,6 +51,19 @@ button:hover {
   border: 1px solid black;
   padding: 10px;
   margin: 5px;
-  width: 30px;
+  width: 60px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memory-value {
+  font-size: 18px;
+}
+
+.memory-hex {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
 }

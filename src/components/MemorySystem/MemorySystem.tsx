@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Styles.css";
 
 const MemorySystem: React.FC = () => {
@@ -8,14 +8,24 @@ const MemorySystem: React.FC = () => {
   const [operation, setOperation] = useState<string>("load");
   const [output, setOutput] = useState<string | number | null>(null);
 
+  useEffect(() => {
+    setOutput(null);
+  }, [operation]);
+
   const handleOperation = () => {
     const memCopy = [...memory];
+    const addressIndex = address / 4;
     if (operation === "load") {
-      setOutput(memCopy[address]);
+      setOutput(memCopy[addressIndex]);
     } else if (operation === "store") {
-      memCopy[address] = value;
+      memCopy[addressIndex] = value;
       setMemory(memCopy);
-      setOutput(`Stored ${value} at address ${address}`);
+      setOutput(
+        `Stored ${value} at address 0x${address
+          .toString(16)
+          .padStart(2, "0")
+          .toUpperCase()}`
+      );
     }
   };
 
@@ -24,26 +34,31 @@ const MemorySystem: React.FC = () => {
       <h1>Simple Memory System</h1>
       <div className="input-group">
         <label>
-          Address (0-9):
-          <input
-            type="number"
+          Address:
+          <select
             value={address}
             onChange={(e) => setAddress(Number(e.target.value))}
-            min="0"
-            max="9"
-          />
+          >
+            {Array.from({ length: 10 }, (_, i) => i * 4).map((addr) => (
+              <option key={addr} value={addr}>
+                {`0x${addr.toString(16).padStart(2, "0").toUpperCase()}`}
+              </option>
+            ))}
+          </select>
         </label>
       </div>
-      <div className="input-group">
-        <label>
-          Value:
-          <input
-            type="number"
-            value={value}
-            onChange={(e) => setValue(Number(e.target.value))}
-          />
-        </label>
-      </div>
+      {operation === "store" && (
+        <div className="input-group">
+          <label>
+            Value:
+            <input
+              type="number"
+              value={value}
+              onChange={(e) => setValue(Number(e.target.value))}
+            />
+          </label>
+        </div>
+      )}
       <div className="input-group">
         <label>
           Operation:
@@ -63,7 +78,11 @@ const MemorySystem: React.FC = () => {
         <div className="memory-slots">
           {memory.map((memValue, index) => (
             <div key={index} className="memory-slot">
-              {memValue}
+              <div className="memory-value">{memValue}</div>
+              <div className="memory-hex">{`0x${(index * 4)
+                .toString(16)
+                .padStart(2, "0")
+                .toUpperCase()}`}</div>
             </div>
           ))}
         </div>
