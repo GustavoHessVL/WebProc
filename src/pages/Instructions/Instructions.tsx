@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Style.css";
 import ToggleButton from "../../components/ToggleButton/ToggleButton";
 import MemorySystem from "../../components/MemorySystem/MemorySystem";
+import ToggleButton4 from "../../components/CPSRToggle/CPSRToggle";
 
 const Theory1 =
   "Lorem ipsum dolor sit amet. Eum autem aliquam et eligendi numquam eos  magnam dolorum sit placeat porro ut doloremque explicabo non molestiae  facilis. Sit nulla placeat et rerum necessitatibus aut dolorem  voluptatibus et perferendis pariatur. Aut animi vitae et quibusdam  galisum ab iusto labore. Et sunt galisum qui laboriosam porro nam  officia aliquam ab impedit soluta.";
@@ -29,14 +30,14 @@ const Instructions: React.FC = () => {
             // <button onClick={changeButton}>{button.valueOf()}</button>
           }
           <div>
+            <ToggleButton4/>
+          </div>
+          {/* <div>
             <ToggleButton />
           </div>
           <div>
-            <p>oi</p>
-          </div>
-          <div>
             <ToggleButton />
-          </div>
+          </div> */}
         </div>
         <div className="Theory">{Theory1}</div>
       </div>
