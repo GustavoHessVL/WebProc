@@ -6,7 +6,7 @@ import MemorySystem from "../../components/MemorySystem/MemorySystem";
 import ToggleButton4 from "../../components/CPSRToggle/CPSRToggle";
 import BranchComponent from "../../components/BranchComponent/BranchComponent";
 import MovComponent from "../../components/MovComponent/MovComponent";
-import AritComponent from "../../components/AritComponent/AritComponent";
+import AritComponent from "../../components/AritComponent/ARMInstruction";
 
 
 const Theory1 =

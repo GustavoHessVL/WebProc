@@ -5,8 +5,6 @@ import ToggleButton from "../../components/ToggleButton/ToggleButton";
 import MemorySystem from "../../components/MemorySystem/MemorySystem";
 import ToggleButton4 from "../../components/CPSRToggle/CPSRToggle";
 import BranchComponent from "../../components/BranchComponent/BranchComponent";
-import MovComponent from "../../components/MovComponent/MovComponent";
-import AritComponent from "../../components/AritComponent/AritComponent";
 
 
 const Theory1 =
@@ -57,7 +55,7 @@ const Instructions: React.FC = () => {
           <div className="Theory">{"As intruções Load / Store"}</div>
           <div className="block">
             <div>
-              <AritComponent />
+              <MemorySystem />
             </div>
           </div>
         </div>
@@ -78,23 +76,6 @@ const Instructions: React.FC = () => {
           </div>
           </div>
           <div className="Theory">{/* Content for the second block */}</div>
-        </div>
-      </div>
-      <div className="section">
-        {" "}
-        //Sessão 2
-        <div className="TitleDiv">
-          <h2 className="section-title">Title 4</h2>
-        </div>
-        <div className="ContentDiv">
-          {/* Content for the second block */}
-          <div className="Theory">{/* Content for the second block */}</div>
-          <div className="block">{
-          }
-          <div>
-            <MovComponent/>
-          </div>
-          </div>
         </div>
       </div>
     </div>

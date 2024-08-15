@@ -6,7 +6,7 @@ import MemorySystem from "../../components/MemorySystem/MemorySystem";
 import ToggleButton4 from "../../components/CPSRToggle/CPSRToggle";
 import BranchComponent from "../../components/BranchComponent/BranchComponent";
 import MovComponent from "../../components/MovComponent/MovComponent";
-import AritComponent from "../../components/AritComponent/AritComponent";
+import ARMInstruction from "../../components/AritComponent/AritComponent";
 
 
 const Theory1 =
@@ -57,7 +57,7 @@ const Instructions: React.FC = () => {
           <div className="Theory">{"As intruções Load / Store"}</div>
           <div className="block">
             <div>
-              <AritComponent />
+              <ARMInstruction />
             </div>
           </div>
         </div>
