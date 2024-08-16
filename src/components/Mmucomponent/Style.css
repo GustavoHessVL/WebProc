@@ -1,148 +1,134 @@
-/* Estilo base para todo o componente */
 .mmu-container {
   max-width: 900px;
-  min-width: 100vh;
-  margin: 50px auto;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #f7f9fc;
-  font-family: Arial, sans-serif;
-}
-
-/* Título do componente */
-.mmu-title {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
   text-align: center;
-  color: #003366; /* Azul escuro */
-  margin-bottom: 30px;
-  font-size: 2em;
+  color: #003366;
 }
 
-/* Estilo para a área de inputs dos endereços lógicos */
-.address-inputs {
+.mmu-container h2 {
+  margin-bottom: 20px;
+  color: #003366;
+  font-size: 30px;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.address-input {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
+.input-group {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.address-input label {
+.input-group h4 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-size: 22px;
+}
+
+.input-group label {
+  display: block;
   font-weight: bold;
-  color: #003366; /* Azul escuro */
-  margin-right: 10px;
+  margin-bottom: 5px;
+  color: #003366;
+  font-size: 16px;
 }
 
-.address-input input {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 70%;
-  margin-right: 10px;
-}
-
-.address-input button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4a90e2;
-  color: #003366; /* Azul escuro */
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.address-input button:hover {
-  background-color: #357abd;
-}
-
-/* Botão para adicionar endereços */
-.address-inputs button {
-  padding: 8px 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4a90e2;
-  color: #003366; /* Azul escuro */
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.address-inputs button:hover {
-  background-color: #357abd;
-}
-
-/* Estilo para a tabela de páginas */
-.page-table-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.page-table-container h3 {
-  color: #003366; /* Azul escuro */
-}
-
-.page-table-container button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #4a90e2;
-  color: #003366; /* Azul escuro */
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 10px;
-}
-
-.page-table-container button:hover {
-  background-color: #357abd;
-}
-
-.page-table {
+.input-group input {
   width: 100%;
-  border-collapse: collapse;
+  padding: 8px;
+  box-sizing: border-box;
+  color: #003366;
+  border: 1px solid #003366;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
-.page-table th,
-.page-table td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  color: #003366; /* Azul escuro */
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #003366;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.page-table th {
-  background-color: #4a90e2;
-  color: #003366; /* Azul escuro */
+button:hover {
+  background-color: #002244;
 }
 
-.page-table tr:nth-child(even) {
-  background-color: #f2f2f2;
+.error {
+  color: #cc0000;
+  margin-top: 10px;
 }
 
-.page-table tr:hover {
-  background-color: #eaeaea;
-}
-
-/* Estilo para a área de output dos endereços físicos */
-.output-container {
-  text-align: center;
-  font-size: 1.2em;
-  color: #003366; /* Azul escuro */
-}
-
-.output-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.output-container li {
-  padding: 5px 0;
-  color: #003366; /* Azul escuro */
-}
-
-.output-container span {
-  color: #4a90e2;
+.result {
+  margin-top: 20px;
+  font-size: 16px; /* Diminui o tamanho da fonte */
   font-weight: bold;
+  color: #003366;
+}
+
+.memory-visualization {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.virtual-memory,
+.physical-memory {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  max-width: 400px;
+  align-items: center;
+}
+
+.memory-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.virtual-memory .memory-block {
+  width: 220px; /* Aumentei a largura dos blocos da memória virtual */
+  height: 60px; /* Aumentei a altura dos blocos da memória virtual */
+}
+
+.physical-memory .memory-block {
+  width: 120px; /* Aumentei a largura dos blocos da memória física */
+  height: 60px; /* Aumentei a altura dos blocos da memória física */
+}
+
+.memory-block {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  background-color: #e6f2ff;
+  color: #003366;
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.memory-block:hover {
+  transform: scale(1.05);
+}
+
+.memory-block.invalid {
+  background-color: #ffcccc;
+  color: #cc0000;
 }

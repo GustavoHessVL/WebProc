@@ -2,12 +2,63 @@
   text-align: center;
   height: 100vh;
 }
-.contentDiv p {
+.contentDiv {
   padding-left: 20px;
   border-radius: 10px;
+  font-size: 22px;
   background-color: transparent;
   font-family: open-sans, Roboto, Arial, sans-serif;
   color: azure;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;
+}
+
+.Text {
+  max-width: 80vw;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+/* Estilo para o contêiner geral das colunas */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha as colunas ao topo */
+  gap: 20px; /* Espaço entre as colunas */
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para as seções */
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Garante que o conteúdo dentro da coluna comece no topo */
+  align-items: center;
+  padding: 20px;
+  background-color: #4b5d6d; /* Cor de fundo alterada para #4b5d6d */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando box-shadow para destacar */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Título de cada seção */
+.section h2 {
+  color: azure; /* Texto alterado para azure */
+  margin-bottom: 15px;
+}
+
+/* Parágrafos */
+.section p {
+  color: azure; /* Texto alterado para azure */
+  line-height: 1.6;
+  margin-bottom: 15px;
+  width: 100%; /* Faz o parágrafo ocupar 100% da largura da coluna */
 }
 
 .interactive {
@@ -15,6 +66,7 @@
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */
   gap: 20px; /* Space between the two divs */
+  height: 100vh;
 }
 
 .theory {
