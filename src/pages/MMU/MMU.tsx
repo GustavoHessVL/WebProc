@@ -6,7 +6,7 @@ const MMU: React.FC = () => {
   return (
     <div className="container">
       <h1>WebProc Project</h1>
-      <p>Interactive Learning System</p>
+      <p>MMU Learning</p>
 
       <div className="contentDiv">
         <div>
@@ -70,8 +70,11 @@ const MMU: React.FC = () => {
             desempenho possível.
           </p>
         </div>
-        <div>
-          <MmuComponent />
+        <div className="interactive">
+          <div>
+            <MmuComponent />
+          </div>
+          <div className="theory">{"oi"}</div>
         </div>
       </div>
     </div>

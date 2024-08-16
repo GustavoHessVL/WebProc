@@ -9,3 +9,20 @@
   font-family: open-sans, Roboto, Arial, sans-serif;
   color: azure;
 }
+
+.interactive {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  gap: 20px; /* Space between the two divs */
+}
+
+.theory {
+  min-width: 200px;
+  max-width: 700px;
+  padding: 20px;
+  min-height: 55px;
+  border-radius: 8px;
+  background-color: #456381;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
