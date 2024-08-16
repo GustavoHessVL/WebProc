@@ -1724,7 +1724,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 176,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1737,7 +1737,7 @@
                 "mode": 1,
                 "x": 0,
                 "y": 32,
-                "width": 975,
+                "width": 960,
                 "height": 1008
             }
         },

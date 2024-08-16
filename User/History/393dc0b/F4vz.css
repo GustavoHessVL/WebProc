@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.section {
+  margin: 20px 0;
+}
+.ContentDiv {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  gap: 20px; /* Space between the two divs */
+}
+
+.section-title {
+  margin-bottom: 10px;
+}
+
+.block {
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 55px;
+  min-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Theory {
+  min-width: 250px;
+  padding: 20px;
+  min-height: 55px;
+  border-radius: 8px;
+  background-color: aquamarine;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: white;
+}
+
+p {
+  color: #333;
+}
