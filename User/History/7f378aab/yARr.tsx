@@ -184,14 +184,7 @@ const Instructions: React.FC = () => {
             </div>
           </div>
           <div className="block">
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: 'center',
-                padding: "20px",
-                margin: "20px",
-              }}>
+            <div>
               <AritComponent />
             </div>
           </div>
@@ -207,14 +200,7 @@ const Instructions: React.FC = () => {
 
           <div className="block">
             {}
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: 'center',
-                padding: "20px",
-                margin: "20px",
-              }}>
+            <div>
               <BranchComponent />
             </div>
           </div>
@@ -312,9 +298,9 @@ const Instructions: React.FC = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                textAlign: 'center',
-                padding: "20px",
-                margin: "20px",
+                textAlign: "justify",
+                padding: "10px",
+                margin: "10px",
               }}>
               <MemAccessComponent />
             </div>

@@ -184,14 +184,7 @@ const Instructions: React.FC = () => {
             </div>
           </div>
           <div className="block">
-            <div style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: 'center',
-                padding: "20px",
-                margin: "20px",
-              }}>
+            <div>
               <AritComponent />
             </div>
           </div>
