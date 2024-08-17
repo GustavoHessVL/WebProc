@@ -8,7 +8,7 @@ git clone (repo-link)
  Run the following command to make sure all dependencies are met:
    npm install
 
---make sure the npm and node are installed! (https://nodejs.org/en)
+--make sure both npm and node are installed! (https://nodejs.org/en)
 
 ### `npm start`
 In the project directory, you can run:
