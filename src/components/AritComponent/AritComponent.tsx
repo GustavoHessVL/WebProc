@@ -1,7 +1,7 @@
 import React, { useState, ChangeEvent, useEffect } from 'react';
 
 interface BinaryInputProps {
-    size: number; // Number of bits (e.g., 8 for 8 bits)
+    size: number; 
     onValueChange: (value: string) => void;
   }
   
@@ -10,14 +10,13 @@ interface BinaryInputProps {
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
       const inputValue = event.target.value;
       
-      // Only allow binary characters and restrict input to the specified size
+
       const binaryValue = inputValue
-        .replace(/[^01]/g, '') // Remove non-binary characters
-        .slice(0, size); // Restrict to the specified size
-      
+        .replace(/[^01]/g, '') 
+        .slice(0, size); 
       setValue(binaryValue);
       if(binaryValue != '' &&  binaryValue.length == size)
-          onValueChange(binaryValue); // Pass the binary value to the parent component
+          onValueChange(binaryValue); 
     };
     
     return (

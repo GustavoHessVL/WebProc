@@ -1,4 +1,3 @@
-file:///home/andoke/Desktop/quadri/git/WebProc/src/components/MmuComponent/MmuComponent.tsx {"mtime":1723855291612,"ctime":1723853075892,"size":6581,"etag":"3cr2n0kqj6q9","orphaned":false,"typeId":""}
 import React, { useState } from "react";
 import "./Style.css";
 
