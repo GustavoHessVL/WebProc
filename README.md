@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# How to use the React App
 ### `Git Clone our Repo`
 command:
 git clone https://github.com/GustavoHessVL/WebProc.git
