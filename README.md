@@ -5,7 +5,7 @@ git clone https://github.com/GustavoHessVL/WebProc.git
 
 
 ### `npm install`
- Run the command:
+ Run the following command to make sure all dependencies are met:
    npm install
 
 --make sure the npm and node are installed! (https://nodejs.org/en)
@@ -19,6 +19,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+by now you should be able to enjoy WebProc :)
+
+
+
+Extras:
 
 ### `npm test`
 
