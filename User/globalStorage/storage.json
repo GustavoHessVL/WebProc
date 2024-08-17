@@ -1734,10 +1734,10 @@
             "backupPath": "/home/andoke/Desktop/quadri/git/WebProc/Backups/5dde2fb5ec220b44d21509fe38a88d90",
             "uiState": {
                 "mode": 0,
-                "x": -575,
-                "y": 524,
-                "width": 1024,
-                "height": 768
+                "x": 0,
+                "y": 32,
+                "width": 960,
+                "height": 1008
             }
         },
         "openedWindows": []
