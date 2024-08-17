@@ -19,7 +19,7 @@ const Home: React.FC = () => {
         >
           Instructions
         </button>
-        <button onClick={() => navigate("/mesi")} className="nav-button">
+        <button onClick={() => navigate("/Mesi")} className="nav-button">
           MESI
         </button>
         <button onClick={() => navigate("/MMU")} className="nav-button">

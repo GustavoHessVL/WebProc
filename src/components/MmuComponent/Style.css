@@ -72,7 +72,7 @@ button:hover {
 
 .result {
   margin-top: 20px;
-  font-size: 16px; /* Diminui o tamanho da fonte */
+  font-size: 16px;
   font-weight: bold;
   color: #003366;
 }
@@ -100,13 +100,13 @@ button:hover {
 }
 
 .virtual-memory .memory-block {
-  width: 220px; /* Aumentei a largura dos blocos da memória virtual */
-  height: 60px; /* Aumentei a altura dos blocos da memória virtual */
+  width: 220px;
+  height: 60px;
 }
 
 .physical-memory .memory-block {
-  width: 120px; /* Aumentei a largura dos blocos da memória física */
-  height: 60px; /* Aumentei a altura dos blocos da memória física */
+  width: 120px;
+  height: 60px;
 }
 
 .memory-block {

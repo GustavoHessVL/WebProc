@@ -1,0 +1,61 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.cache-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cache {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 10px;
+}
+
+.memory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.memory-row {
+  display: flex;
+  align-items: center;
+}
+
+.memory-position {
+  width: 400px;
+  height: 20px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: red;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.memory-address {
+  font-size: 12px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px auto;
+  gap: 80px;
+}
+
+.inputsContainer {
+  background-color: #213447;
+  padding: 40px;
+  border-radius: 20px;
+}

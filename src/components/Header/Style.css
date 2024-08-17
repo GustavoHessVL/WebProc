@@ -18,17 +18,17 @@ body {
 }
 
 .header {
-  width: 100%; /* Ensure full width */
-  background-color: #1c1c1c; /* Dark background */
+  width: 100%;
+  background-color: #1c1c1c;
   padding: 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
-  width: 100%; /* Ensure content stretches full width */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,11 +37,11 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3498db; /* Blue color for text */
+  color: #3498db;
 }
 
 .logo-text {
-  color: #ecf0f1; /* Light grey color */
+  color: #ecf0f1;
 }
 
 .main-content {

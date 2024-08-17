@@ -10,7 +10,7 @@
   font-family: open-sans, Roboto, Arial, sans-serif;
   color: azure;
   display: flex;
-  flex-direction: column; /* stack items vertically */
+  flex-direction: column;
   align-items: center;
 }
 
@@ -20,12 +20,12 @@
   justify-content: center;
   gap: 50px;
 }
-/* Estilo para o contêiner geral das colunas */
+
 .content-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinha as colunas ao topo */
-  gap: 20px; /* Espaço entre as colunas */
+  align-items: flex-start;
+  gap: 20px;
   margin: 50px auto;
   max-width: 1200px;
   padding: 20px;
@@ -33,39 +33,36 @@
   font-family: Arial, sans-serif;
 }
 
-/* Estilo para as seções */
 .section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Garante que o conteúdo dentro da coluna comece no topo */
+  justify-content: flex-start;
   align-items: center;
   padding: 20px;
-  background-color: #4b5d6d; /* Cor de fundo alterada para #4b5d6d */
+  background-color: #4b5d6d;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando box-shadow para destacar */
-  text-align: center; /* Centraliza o texto horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Título de cada seção */
 .section h2 {
-  color: azure; /* Texto alterado para azure */
+  color: azure;
   margin-bottom: 15px;
 }
 
-/* Parágrafos */
 .section p {
-  color: azure; /* Texto alterado para azure */
+  color: azure;
   line-height: 1.6;
   margin-bottom: 15px;
-  width: 100%; /* Faz o parágrafo ocupar 100% da largura da coluna */
+  width: 100%;
 }
 
 .interactive {
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  gap: 20px; /* Space between the two divs */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   height: 100vh;
 }
 
