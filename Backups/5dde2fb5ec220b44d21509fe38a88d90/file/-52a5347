@@ -1,3 +1,4 @@
+file:///home/andoke/Desktop/quadri/git/WebProc/src/components/MmuComponent/MmuComponent.tsx {"mtime":1723855291612,"ctime":1723853075892,"size":6581,"etag":"3cr2n0kqj6q9","orphaned":false,"typeId":""}
 import React, { useState } from "react";
 import "./Style.css";
 
@@ -12,15 +13,15 @@ interface MemoryProps {
   offset: number;
 }
 
-const unitSize = 4; // Tamanho da unidade em bytes (4 bytes por unidade)
-const initialMemorySize = 3; // Inicialmente 3 quadros de memória de 1024 bytes cada
-const maxPagesAndFrames = 6; // Limite máximo de páginas e quadros
+const unitSize = 4; 
+const initialMemorySize = 3; 
+const maxPagesAndFrames = 6;
 
 const MmuComponent: React.FC = () => {
   const [pageTable, setPageTable] = useState<PageTableEntry[]>([
     { frame: 1, valid: true, originalFrame: 1 },
     { frame: 2, valid: true, originalFrame: 2 },
-    { frame: 0, valid: true, originalFrame: 0 }, // Página 2 como válida para simulação
+    { frame: 0, valid: true, originalFrame: 0 },
   ]);
 
   const [input, setInput] = useState<MemoryProps>({ pageNumber: 0, offset: 0 });
@@ -58,8 +59,8 @@ const MmuComponent: React.FC = () => {
 
     const entry = pageTable[pageNumber];
     if (entry.valid) {
-      const address = entry.frame * 1024 + offset * unitSize; // Multiplicando o offset pelo tamanho da unidade
-      setPhysicalAddress(address.toString(16).toUpperCase()); // Convertendo o endereço físico para hexadecimal
+      const address = entry.frame * 1024 + offset * unitSize; 
+      setPhysicalAddress(address.toString(16).toUpperCase()); 
       setFrameNumber(entry.frame);
       setError(null);
     } else {
@@ -102,8 +103,8 @@ const MmuComponent: React.FC = () => {
       prevPageTable.map((page, i) => {
         if (i === index) {
           return page.valid
-            ? { ...page, valid: false } // Tornar a página inválida
-            : { ...page, valid: true, frame: page.originalFrame! }; // Restaurar a página com o quadro original
+            ? { ...page, valid: false } 
+            : { ...page, valid: true, frame: page.originalFrame! }; 
         }
         return page;
       })

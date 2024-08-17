@@ -85,7 +85,7 @@ const Instructions: React.FC = () => {
             }}
           >
             {Theory21}
-          </div>// Restaurar a página com o quadro original
+          </div>
           <div
             style={{
               display: "flex",
