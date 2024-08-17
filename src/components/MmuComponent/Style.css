@@ -1,0 +1,134 @@
+.mmu-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #003366;
+}
+
+.mmu-container h2 {
+  margin-bottom: 20px;
+  color: #003366;
+  font-size: 30px;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.input-group h4 {
+  margin-bottom: 10px;
+  color: #003366;
+  font-size: 22px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003366;
+  font-size: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  color: #003366;
+  border: 1px solid #003366;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #003366;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #002244;
+}
+
+.error {
+  color: #cc0000;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 16px; /* Diminui o tamanho da fonte */
+  font-weight: bold;
+  color: #003366;
+}
+
+.memory-visualization {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.virtual-memory,
+.physical-memory {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  max-width: 400px;
+  align-items: center;
+}
+
+.memory-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.virtual-memory .memory-block {
+  width: 220px; /* Aumentei a largura dos blocos da memória virtual */
+  height: 60px; /* Aumentei a altura dos blocos da memória virtual */
+}
+
+.physical-memory .memory-block {
+  width: 120px; /* Aumentei a largura dos blocos da memória física */
+  height: 60px; /* Aumentei a altura dos blocos da memória física */
+}
+
+.memory-block {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #003366;
+  border-radius: 4px;
+  background-color: #e6f2ff;
+  color: #003366;
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.memory-block:hover {
+  transform: scale(1.05);
+}
+
+.memory-block.invalid {
+  background-color: #ffcccc;
+  color: #cc0000;
+}
