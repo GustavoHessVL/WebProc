@@ -1,19 +1,18 @@
 import React, { useState,useEffect } from 'react';
 
 const BranchComponent = () => {
-    // Endereço inicial do PC
-    const [pc, setPc] = useState(0x100); // Valor inicial arbitrário do PC em hexadecimal
-    const [offset, setOffset] = useState(0x0); // Offset de desvio em hexadecimal
+
+    const [pc, setPc] = useState(0x100); 
+    const [offset, setOffset] = useState(0x0); 
 
     const calculateOffset = (offset: Number) => {
-        // Se o offset for maior que o maior valor positivo em 24 bits, ele é negativo
         if (offset.valueOf() > 0x7FFFFF) {
-            // Subtrai 2^24 (0x1000000) para obter o valor negativo em complemento de 2
+
             return offset.valueOf() - 0x1000000;
         }
         return offset.valueOf();
     };
-    // Função para simular a instrução de branch
+
     const handleBranch = () => {
         const signedOffset = calculateOffset(offset);
         const newPc = pc + signedOffset;
@@ -24,10 +23,8 @@ const BranchComponent = () => {
         setPc(newPc);
     };
 
-    // Função para converter um número para string hexadecimal, com prefixo '0x'
     const toHex = (num: Number) => '0x' + num.toString(16).toUpperCase();
 
-    // Função para converter um valor de string hexadecimal para decimal
     const handleHexInput = (e: React.ChangeEvent<HTMLInputElement>) => {
         const hexValue = e.target.value;
         setOffset(parseInt(hexValue, 16) || 0);

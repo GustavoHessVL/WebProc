@@ -1,4 +1,3 @@
-file:///home/andoke/Desktop/quadri/git/WebProc/src/components/BranchComponent/BranchComponent.tsx {"mtime":1723784659809,"ctime":1723671499806,"size":4337,"etag":"3cqsa4jc74fs","orphaned":false,"typeId":""}
 import React, { useState,useEffect } from 'react';
 
 const BranchComponent = () => {
